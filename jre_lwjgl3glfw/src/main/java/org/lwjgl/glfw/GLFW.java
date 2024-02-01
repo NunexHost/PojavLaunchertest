@@ -528,8 +528,8 @@ public class GLFW
         }
 
         // Minecraft triggers a glfwPollEvents() on splash screen, so update window size there.
-        CallbackBridge.receiveCallback(CallbackBridge.EVENT_TYPE_FRAMEBUFFER_SIZE, mGLFWWindowWidth, mGLFWWindowHeight, 0, 0);
-        CallbackBridge.receiveCallback(CallbackBridge.EVENT_TYPE_WINDOW_SIZE, mGLFWWindowWidth, mGLFWWindowHeight, 0, 0);
+      //  CallbackBridge.receiveCallback(CallbackBridge.EVENT_TYPE_FRAMEBUFFER_SIZE, mGLFWWindowWidth, mGLFWWindowHeight, 0, 0);
+     //   CallbackBridge.receiveCallback(CallbackBridge.EVENT_TYPE_WINDOW_SIZE, mGLFWWindowWidth, mGLFWWindowHeight, 0, 0);
 
         try {
             System.loadLibrary("pojavexec");
@@ -1091,9 +1091,9 @@ public class GLFW
         }
     }
 
-    public static void glfwWaitEvents() {}
+  //  public static void glfwWaitEvents() {}
 
-    public static void glfwWaitEventsTimeout(double timeout) {
+    //public static void glfwWaitEventsTimeout(double timeout) {
         // Boardwalk: this isn't how you do a frame limiter, but oh well
         // System.out.println("Frame limiter");
     /*
@@ -1104,7 +1104,7 @@ public class GLFW
     */
         // System.out.println("Out of the frame limiter");
 
-    }
+  //  }
 
     public static void glfwPostEmptyEvent() {}
 
